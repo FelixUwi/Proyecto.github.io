@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>USUARIOS</h1>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><button class="BuscarBtn"><a href="/CRUD USUARIOS/Buscar/index.html">Buscar Usuarios</a></button></li>
+                <li><button class="ActualizarBtn"><a href="/CRUD USUARIOS/Actualizar/index.html">Actualizar Usuarios</a></button></li>
+                <li><button class="EliminarBtn"><a href="/CRUD USUARIOS/Eliminar/Index.html">Eliminar Usuarios</a></button></li>
+                <li><button class="AñadirBtn"><a href="/CRUD USUARIOS/Añadir/index.html">Añadir Usuarios</a></button></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <a href="/CRUD USUARIOS/Buscar/index.html">Buscar</a>
+                <a href="/CRUD USUARIOS/Actualizar/index.html">Actualizar</a>
+                <a href="/CRUD USUARIOS/Eliminar/Index.html">Eliminar</a>
+                <a href="/CRUD USUARIOS/Añadir/index.html">Añadir</a>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li class="logo">
+                <a href="#">
+                    <span class="icon"><ion-icon name="logo-web-component"></ion-icon></ion-icon></span>
+                    <span class="text">Webside Logo</span>
+                </a>
+            </li>
+            <li>
+                <a href="/PAGINA INICIO/index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="text">Chat</span>
+                </a>
+            </li>
+            <li>
+                <a href="/MENU/index.html">
+                    <span class="icon"><ion-icon name="git-network-outline"></ion-icon></span>
+                    <span class="text">Work </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="cog-outline"></ion-icon></span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="bottom">
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <div class="imgBx">
+                                <img src="/PAGINA INICIO/logo.png" alt="Cado img">
+                            </div>
+                        </span>
+                        <span class="text">User</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/INICIO DE SESION/index.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="text">Log out</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <main>
+        <div class="añadir">
+            <div class="nombre">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+                <label for="floatingInput">Nombres</label>
+            </div>
+            <div class="apellido">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Lastname">
+                <label for="floatingInput">Apellidos</label>
+            </div>
+            <div class="nacimiento">
+                <input type="date" class="form-control" id="floatingInput" placeholder="birth date">
+                <label for="floatingInput">Fecha de nacimiento</label>
+            </div>
+            <div class="edad">
+                <input type="number" class="form-control" id="floatingInput" placeholder="Age">
+                <label for="floatingInput">Edad</label>
+            </div>
+            <div class="correo">
+                <input type="email" class="form-control" id="floatingInput" placeholder="E-mail">
+                <label for="floatingInput">Correo</label>
+            </div>
+            <div class="telefono">
+                <input type="tel" class="form-control" id="floatingInput" placeholder="Phone">
+                <label for="floatingInput">Numero de telefono</label>
+            </div>
+            <div class="direccion">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Resident address">
+                <label for="floatingInput">Direccion de Residencia</label>
+            </div>
+            <div class="cargo">
+                <select>
+                    <option value="Cargo 1">Seleccionar Cargo</option>
+                    <option value="Cargo 1">Cargo 1</option>
+                    <option value="Cargo 2">Cargo 2</option>
+                    <option value="Cargo 3">Cargo 3</option>
+                    <option value="Cargo 4">Cargo 4</option>
+                </select>
+            </div>
+            <div class="documento">
+                <select>
+                    <option value="Documento">Seleccionar Documento</option>
+                    <option value="CC">Cedula de Ciudadania</option>
+                    <option value="CE">Cedula de Extrangeria</option>
+                </select>
+            </div>
+            <div class="numero">
+                <input type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput">Numero de Documento</label>
+            </div>
+            <div class="usuario">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Username">
+                <label for="floatingInput">Nombre de Usuario</label>
+            </div>
+            <div class="contraseña">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="confirmar">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword"> Confirmar Contraseña</label>
+            </div>
+            <form class="barra" role="search">
+                <button>Add</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
